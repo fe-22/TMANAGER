@@ -1,0 +1,44 @@
+
+{% extends "base.html" %}
+
+{% block title %}Check-in Rápido{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">
+                    <i class="bi bi-lightning-charge"></i> Check-in Rápido
+                </h4>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" class="form-control" id="email" name="email" 
+                               placeholder="Digite o email cadastrado" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="bi bi-check-circle"></i> Fazer Check-in
+                    </button>
+                </form>
+                
+                <div class="mt-4">
+                    <div class="alert alert-info">
+                        <h6><i class="bi bi-info-circle"></i> Como funciona:</h6>
+                        <p class="mb-0">Digite o email utilizado no cadastro para registrar sua presença automaticamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-3">
+            <a href="/cadastrar" class="btn btn-outline-secondary">
+                <i class="bi bi-person-plus"></i> Não tenho cadastro
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

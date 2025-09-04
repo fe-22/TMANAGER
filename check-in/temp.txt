@@ -1,0 +1,9 @@
+/igreja_checkin
+│   app.py                # Aplicação principal
+│   obreiros.db           # Banco de dados SQLite
+│   requirements.txt       # Dependências
+├───templates
+│       cadastro.html      # Página de cadastro
+│       checkin.html       # Página de check-in
+│       login_lider.html   # Página de login para líderes
+│       painel_lider.html  # Painel de controle dos líderes
