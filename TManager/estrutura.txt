@@ -1,0 +1,31 @@
+tmanager/
+│
+├── app.py                 # Arquivo principal
+├── requirements.txt       # Dependências
+│
+├── modules/              # Módulos da aplicação
+│   ├── __init__.py
+│   ├── dashboard.py
+│   ├── fuel_analysis.py
+│   ├── route_optimizer.py
+│   ├── cost_control.py
+│   ├── vehicle_manager.py
+│   ├── driver_manager.py
+│   ├── data_manager.py
+│   └── performance_analysis.py
+│
+├── utils/                # Utilitários
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── calculations.py
+│   └── config.py
+│
+└── data/                 # Dados
+    ├── veiculos.csv
+    ├── motoristas.csv
+    ├── postos.csv
+    └── rotas.csv
+
+
+streamlit run app.py
+streamlit run teste.py
