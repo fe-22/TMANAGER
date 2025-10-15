@@ -1,0 +1,14 @@
+@"
+# Dados
+data/
+*.csv
+*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Streamlit
+.streamlit/
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
