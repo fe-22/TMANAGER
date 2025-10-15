@@ -10,18 +10,70 @@ from datetime import datetime, timedelta
 import io
 
 # Configuração
-st.set_page_config(page_title="T-Manager", page_icon="🚌", layout="wide")
+st.set_page_config(
+    page_title="T-Manager", 
+    page_icon="🚌", 
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 # CSS
 st.markdown("""
 <style>
-.main-header {font-size: 3rem; color: #2E86AB; font-weight: bold; text-align: center; margin-bottom: 2rem;}
-.data-table {margin: 1rem 0;}
-.footer {position: fixed; left: 0; bottom: 0; width: 100%; background-color: #2E86AB; color: white; text-align: center; padding: 10px;}
-.consumo-card {background: #f8f9fa; padding: 1rem; border-radius: 10px; border-left: 4px solid #28a745; margin: 0.5rem 0;}
-.anp-header {background: linear-gradient(135deg, #2E86AB, #A23B72); color: white; padding: 1rem; border-radius: 10px; margin-bottom: 1rem;}
-.success-box {background: #d4edda; color: #155724; padding: 1rem; border-radius: 5px; margin: 1rem 0;}
-.warning-box {background: #fff3cd; color: #856404; padding: 1rem; border-radius: 5px; margin: 1rem 0;}
+    .stApp {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    .main .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .main-header {
+        font-size: 3rem; 
+        color: #2E86AB; 
+        font-weight: bold; 
+        text-align: center; 
+        margin-bottom: 2rem;
+    }
+    .data-table {margin: 1rem 0;}
+    .footer {
+        position: fixed; 
+        left: 0; 
+        bottom: 0; 
+        width: 100%; 
+        background-color: #2E86AB; 
+        color: white; 
+        text-align: center; 
+        padding: 10px;
+    }
+    .consumo-card {
+        background: #f8f9fa; 
+        padding: 1rem; 
+        border-radius: 10px; 
+        border-left: 4px solid #28a745; 
+        margin: 0.5rem 0;
+    }
+    .anp-header {
+        background: linear-gradient(135deg, #2E86AB, #A23B72); 
+        color: white; 
+        padding: 1rem; 
+        border-radius: 10px; 
+        margin-bottom: 1rem;
+    }
+    .success-box {
+        background: #d4edda; 
+        color: #155724; 
+        padding: 1rem; 
+        border-radius: 5px; 
+        margin: 1rem 0;
+    }
+    .warning-box {
+        background: #fff3cd; 
+        color: #856404; 
+        padding: 1rem; 
+        border-radius: 5px; 
+        margin: 1rem 0;
+    }
 </style>
 """, unsafe_allow_html=True)
 
